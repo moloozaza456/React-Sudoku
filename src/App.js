@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react";
+// import logo from "./logo.svg";
+import "./App.css";
+import Cell from "./Cell";
+import Board from "./Board";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      // "" จะมองเป็น string ทั้งหมด {} จะมองเป็น ตัวแปร value
+      <div className="App">
+        <Board></Board>
+      </div>
+    );
+  }
 }
 
 export default App;
